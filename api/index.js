@@ -23,7 +23,7 @@ const bucket = "my-airbnb-booking-app";
 
 app.use(express.json());
 app.use(cookieParser());
-app.use("/api/uploads", express.static(__dirname + "/api/uploads"));
+app.use("/uploads", express.static(__dirname + "/uploads"));
 
 app.use(
   cors({
